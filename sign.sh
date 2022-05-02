@@ -13,9 +13,9 @@ fi
 domain=$1
 
 cd /tmp
-wget https://github.com/go-acme/lego/releases/download/v3.7.0/lego_v3.7.0_linux_amd64.tar.gz
+wget https://github.com/go-acme/lego/releases/download/v4.6.0/lego_v4.6.0_linux_amd64.tar.gz
 
-tar zxvf lego_v3.7.0_linux_amd64.tar.gz
+tar zxvf lego_v4.6.0_linux_amd64.tar.gz
 chmod 755 *
 ./lego --email="admin@$domain" --domains="$domain" --http -a run
 
